@@ -197,7 +197,7 @@ def perform_build_and_return_descriptor(
     if not args.skip_build:
         # TODO: figure out the dependency issues in our CMake build instead.
         # TODO: move this into yb_build.sh itself.
-        # yugabyted-ui build only needs to run once, so avoid wasting time building it in these
+        # pineseed-ui build only needs to run once, so avoid wasting time building it in these
         # preliminary builds.
         for preliminary_target in ['protoc-gen-insertions', 'bfql_codegen']:
             preliminary_step_cmd_list = yb_build_args_prefix + ['--target', preliminary_target]

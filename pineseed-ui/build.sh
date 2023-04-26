@@ -9,7 +9,7 @@ readonly BASEDIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && 
 cd "${BASEDIR}"
 readonly APISERVERDIR=${BASEDIR}/apiserver/cmd/server
 readonly UIDIR=${BASEDIR}/ui
-readonly OUTDIR="${BUILD_ROOT:-/tmp/yugabyted-ui}/gobin"
+readonly OUTDIR="${BUILD_ROOT:-/tmp/pineseed-ui}/gobin"
 readonly OUTFILE="${OUTDIR}/yugabyted-ui"
 mkdir -p "${OUTDIR}"
 

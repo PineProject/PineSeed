@@ -54,7 +54,7 @@ def filter_bin_items(
     # We remove some items in the 'bin' directory depending on what components are built or not.
     bin_items_to_remove = []
     if not optional_components.yugabyted_ui_enabled:
-        bin_items_to_remove.append('yugabyted-ui')
+        bin_items_to_remove.append('pineseed-ui')
 
     if not optional_components.odyssey_enabled:
         bin_items_to_remove.append('odyssey')

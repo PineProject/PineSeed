@@ -1099,10 +1099,10 @@ while [[ $# -gt 0 ]]; do
       build_cxx=false
       java_only=true
     ;;
-    --build-yugabyted-ui|--with-yugabyted-ui)
+    --build-pineseed-ui|--with-pineseed-ui)
       build_yugabyted_ui=true
     ;;
-    --no-yugabyted-ui|--skip-yugabyted-ui)
+    --no-pineseed-ui|--skip-pineseed-ui)
       build_yugabyted_ui=false
     ;;
     --num-repetitions|--num-reps|-n)

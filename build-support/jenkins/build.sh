@@ -602,10 +602,10 @@ else
   log "Skipping creating distribution package. Build type: $build_type, OSTYPE: ${OSTYPE}," \
       "YB_SKIP_CREATING_RELEASE_PACKAGE: ${YB_SKIP_CREATING_RELEASE_PACKAGE:-undefined}."
 
-  # yugabyted-ui is usually built during package build.  Test yugabyted-ui build here when not
+  # pineseed-ui is usually built during package build.  Test pineseed-ui build here when not
   # building package.
   log "Building yugabyted-ui"
-  time "${YB_SRC_ROOT}/yb_build.sh" "${BUILD_TYPE}" --build-yugabyted-ui --skip-java
+  time "${YB_SRC_ROOT}/yb_build.sh" "${BUILD_TYPE}" --build-pineseed-ui --skip-java
 fi
 
 exit ${EXIT_STATUS}

@@ -1508,7 +1508,7 @@ class ControlScript(object):
 
             if is_first_run:
                 if self.configs.saved_data.get("ui"):
-                    yugabyted_ui_cmd = [ find_binary_location("yugabyted-ui")] + \
+                    yugabyted_ui_cmd = [ find_binary_location("pineseed-ui")] + \
                         [
                             "-database_host={}".format(bind_ip)
                         ]
@@ -1517,8 +1517,8 @@ class ControlScript(object):
                             "-database_password={}".format(
                             self.configs.saved_data.get("database_password"))])
 
-                    self.processes["yugabyted-ui"] = ProcessManager(
-                        "yugabyted-ui", yugabyted_ui_cmd, self.configs.saved_data.get("log_dir"),
+                    self.processes["pineseed-ui"] = ProcessManager(
+                        "pineseed-ui", yugabyted_ui_cmd, self.configs.saved_data.get("log_dir"),
                         self.configs.saved_data.get("data_dir"))
 
             if self.configs.saved_data.get("ui"):
@@ -1603,7 +1603,7 @@ class ControlScript(object):
         if not self.configs.saved_data.get("ui"):
             return (err, was_started)
 
-        yugabyted_ui_process = self.processes.get("yugabyted-ui")
+        yugabyted_ui_process = self.processes.get("pineseed-ui")
 
         try:
             if is_first_run:

@@ -1,4 +1,4 @@
-# YugabyteDB UI Application
+# PineSeed UI Application
 
 ## Prerequisites
 
@@ -11,14 +11,14 @@ Run `npm ci` to install all dependencies
 NPM Version - 6.14.4
 go version - go version go1.18.1 darwin/amd64
 
-## Building Yugabyted UI Project
+## Building PineSeed UI Project
 
-Run the build script from the `yugabyted-ui` directory
+Run the build script from the `pineseed-ui` directory
 
 ```sh
 $ ./build.sh
 [18:23:22] [snowpack] ▶ Build Complete!
-Yugabyted UI Binary generated successfully in the bin/ directory.
+PineSeed UI Binary generated successfully in the bin/ directory.
 ```
 
 This will generate the binaries inside `bin` directory.
@@ -33,6 +33,6 @@ This will generate the binaries inside `bin` directory.
 
 ### Build Go API Server application
 
-`go build -o yugabyted-ui` - builds the Go API Server of the Yugabyted UI.
+`go build -o pineseed-ui` - builds the Go API Server of the PineSeed UI.
 
-`./yugabyted-ui` - Runs the app at http://localhost:1323                             |
+`./pineseed-ui` - Runs the app at http://localhost:1323                             |
